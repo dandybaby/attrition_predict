@@ -52,7 +52,7 @@ pre_attrition = model_lr.predict_proba(pre_data)[:, 1]
 user_ID = full.loc[1176:, 'user_id']
 pre_result = pd.DataFrame({'user_id': user_ID, 'Attrition': pre_attrition})
 pre_result.to_csv('pre_attrition2.csv', index=False)
-#
+
 # # 随机森林模型
 # # model_rf = RandomForestClassifier()
 # # model_rf.fit(train_x, train_y)
